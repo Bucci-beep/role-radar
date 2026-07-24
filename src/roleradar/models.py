@@ -13,3 +13,8 @@ class Job:
     title: str
     required_skills: list[str]
 
+@dataclass
+class SkillMatchResult:
+    matched_skills: list[str]
+    missing_skills: list[str]
+    score: float
